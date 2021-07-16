@@ -12,7 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest
-@Transactional // test를 실행하고 test가 끝나면 모든걸 롤백 시킨다. db에 정보도 다 없어짐 -> 얘 야무지다잉
+@Transactional
+        // test를 실행하고 test가 끝나면 모든걸 롤백 시킨다. db에 정보도 다 없어짐 -> 얘 야무지다잉
 class MemberServiceIntegrationTest {
 
     @Autowired
